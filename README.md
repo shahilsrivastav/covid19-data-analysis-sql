@@ -64,6 +64,7 @@ The project uses publicly available COVID-19 datasets:
 
 ## 📁 Project Structure
 
+```
 covid19-data-analysis-sql/
 │
 ├── data/                                    # Raw datasets
@@ -76,6 +77,7 @@ covid19-data-analysis-sql/
 │   └── 03_views_covid19_data.sql            # Reusable SQL views
 │
 └── README.md                                # Project documentation
+```
 
 ---
 
