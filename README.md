@@ -12,10 +12,10 @@ The dataset was cleaned and transformed before performing analysis to ensure acc
 ### 🌍 Global Trends
 ![Global Stats](screenshots/global_stats.png)
 
-### 🌎 Country Analysis
+### 🌎 Country-Level Analysis
 ![Country Analysis](screenshots/country_analysis.png)
 
-### 💉 Vaccination Progress
+### 💉 Vaccination Analysis
 ![Vaccination](screenshots/vaccination_progress.png)
 
 ---
@@ -36,7 +36,8 @@ The dataset was cleaned and transformed before performing analysis to ensure acc
 ## ⚙️ Data Cleaning
 - Handled missing values using `NULLIF` and `TRIM`
 - Converted data types (VARCHAR → DATE, DOUBLE, BIGINT)
-- Resolved import issues using VARCHAR-first approach
+- Resolved import issues by initially storing all columns as VARCHAR
+- Performed data transformation for accurate analysis
 
 ---
 
@@ -57,9 +58,30 @@ The dataset was cleaned and transformed before performing analysis to ensure acc
 - Rolling vaccination count using window functions  
 - Percentage of population vaccinated  
 
-### 🇮🇳 India-Specific Analysis
-- COVID case vs death trends  
-- Vaccination progress over time  
+---
+
+## 🇮🇳 India-Specific Analysis
+
+To provide deeper insights, a focused analysis was performed on India.
+
+### 📊 COVID Trends in India
+![India Analysis](screenshots/india_analysis.png)
+
+- Tracked growth of total cases and deaths over time  
+- Calculated death percentage to understand severity trends  
+- Observed fluctuations in death rate during different phases  
+
+### 💉 Vaccination Progress in India
+![India Vaccination](screenshots/vaccination_progress.png)
+
+- Analyzed daily vaccination data  
+- Used window functions to calculate rolling vaccination count  
+- Measured percentage of population vaccinated over time  
+
+### 📌 Key Insights
+- Rapid increase in cases during peak pandemic periods  
+- Death percentage remained relatively stable with minor fluctuations  
+- Vaccination rollout showed consistent and steady growth  
 
 ---
 
@@ -88,6 +110,10 @@ covid19-data-analysis-sql/
 │   └── 03_views.sql
 │
 ├── screenshots/
+│   ├── global_stats.png
+│   ├── country_analysis.png
+│   ├── vaccination_progress.png
+│   └── india_analysis.png
 │
 └── README.md
 ```
@@ -104,10 +130,10 @@ covid19-data-analysis-sql/
 ---
 
 ## 🚀 Key Learnings
-- Handling real-world messy data  
-- Writing optimized SQL queries  
+- Handling real-world messy datasets  
+- Writing optimized and structured SQL queries  
 - Using advanced SQL features like window functions and CTE  
-- Designing reusable views  
+- Designing reusable SQL views for better analysis  
 
 ---
 
