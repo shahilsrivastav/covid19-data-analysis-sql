@@ -7,6 +7,19 @@ The dataset was cleaned and transformed before performing analysis to ensure acc
 
 ---
 
+## 📸 Project Preview
+
+### 🌍 Global Trends
+![Global Stats](screenshots/global_stats.png)
+
+### 🌎 Country Analysis
+![Country Analysis](screenshots/country_analysis.png)
+
+### 💉 Vaccination Progress
+![Vaccination](screenshots/vaccination_progress.png)
+
+---
+
 ## 🛠 Tools & Technologies
 - SQL (MySQL)
 - Excel (for initial data handling)
@@ -15,40 +28,38 @@ The dataset was cleaned and transformed before performing analysis to ensure acc
 ---
 
 ## 📂 Dataset
-The project uses publicly available COVID-19 datasets:
-- Covid Deaths
-- Covid Vaccinations
+- COVID Deaths dataset  
+- COVID Vaccinations dataset  
 
 ---
 
 ## ⚙️ Data Cleaning
-- Handled missing and null values using SQL
+- Handled missing values using `NULLIF` and `TRIM`
 - Converted data types (VARCHAR → DATE, DOUBLE, BIGINT)
-- Trimmed inconsistent values
-- Managed data import issues by initially storing columns as VARCHAR
+- Resolved import issues using VARCHAR-first approach
 
 ---
 
 ## 🔍 Key Analysis Performed
 
 ### 🌍 Global Analysis
-- Total cases and deaths over time
-- Daily death percentage
+- Total cases and deaths over time  
+- Daily death percentage  
 
 ### 🌎 Country-Level Analysis
-- Infection rate compared to population
-- Highest death count by country
+- Infection rate compared to population  
+- Highest death count by country  
 
 ### 🌐 Continent-Level Analysis
-- Total deaths by continent
+- Total deaths by continent  
 
 ### 💉 Vaccination Analysis
-- Rolling vaccination count using window functions
-- Percentage of population vaccinated
+- Rolling vaccination count using window functions  
+- Percentage of population vaccinated  
 
 ### 🇮🇳 India-Specific Analysis
-- COVID case vs death trends
-- Vaccination progress over time
+- COVID case vs death trends  
+- Vaccination progress over time  
 
 ---
 
@@ -67,32 +78,43 @@ The project uses publicly available COVID-19 datasets:
 ```
 covid19-data-analysis-sql/
 │
-├── data/                                    # Raw datasets
+├── data/
 │   ├── covid_deaths.csv
 │   └── covid_vaccinations.csv
 │
-├── sql/                                     # SQL scripts
-│   ├── 01_data_cleaning_covid19_data.sql    # Data cleaning & preprocessing
-│   ├── 02_analysis_queries_covid19_data.sql # Exploratory analysis queries
-│   └── 03_views_covid19_data.sql            # Reusable SQL views
+├── sql/
+│   ├── 01_data_cleaning.sql
+│   ├── 02_analysis_queries.sql
+│   └── 03_views.sql
 │
-└── README.md                                # Project documentation
+├── screenshots/
+│
+└── README.md
 ```
 
 ---
 
-## 🚀 Key Learnings
-- Handling real-world messy data
-- Writing optimized and structured SQL queries
-- Using advanced SQL features like window functions and CTE
-- Designing reusable views for analysis
+## ▶️ How to Run
+
+1. Create a database in MySQL  
+2. Run `01_data_cleaning.sql`  
+3. Run `02_analysis_queries.sql`  
+4. Run `03_views.sql`  
 
 ---
 
-## 📌 Conclusion
-This project demonstrates how SQL can be used to extract insights from real-world datasets, helping understand pandemic trends and vaccination progress.
+## 🚀 Key Learnings
+- Handling real-world messy data  
+- Writing optimized SQL queries  
+- Using advanced SQL features like window functions and CTE  
+- Designing reusable views  
+
+---
+
+## 📊 Future Improvements
+- Build an interactive dashboard using Power BI  
 
 ---
 
 ## 👤 Author
-Shahil srivastav
+Shahil Srivastav
