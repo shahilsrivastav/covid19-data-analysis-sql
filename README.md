@@ -63,14 +63,19 @@ The project uses publicly available COVID-19 datasets:
 ---
 
 ## 📁 Project Structure
+
 covid19-data-analysis-sql/
 │
-├── data/
-├── sql/
-│ ├── 01_data_cleaning.sql
-│ ├── 02_analysis_queries.sql
-│ └── 03_views.sql
-└── README.md
+├── data/                                    # Raw datasets
+│   ├── covid_deaths.csv
+│   └── covid_vaccinations.csv
+│
+├── sql/                                     # SQL scripts
+│   ├── 01_data_cleaning_covid19_data.sql    # Data cleaning & preprocessing
+│   ├── 02_analysis_queries_covid19_data.sql # Exploratory analysis queries
+│   └── 03_views_covid19_data.sql            # Reusable SQL views
+│
+└── README.md                                # Project documentation
 
 ---
 
