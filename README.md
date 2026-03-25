@@ -72,7 +72,7 @@ To provide deeper insights, a focused analysis was performed on India.
 - Observed fluctuations in death rate during different phases  
 
 ### 💉 Vaccination Progress in India
-![India Vaccination](screenshots/vaccination_progress.png)
+![India Vaccination](screenshots/India_vaccination_progress.png)
 
 - Analyzed daily vaccination data  
 - Used window functions to calculate rolling vaccination count  
