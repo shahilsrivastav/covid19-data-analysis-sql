@@ -138,7 +138,7 @@ covid19-data-analysis-sql/
 ---
 
 ## 📊 Interactive Dashboard
-![Covid Dashboard](screenshots/covid_dashboard.png)
+![Covid Dashboard](screenshots/covid dashboard.png)
 An interactive dashboard was built using Tableau to visualize COVID-19 trends and vaccination progress.
 
 🔗 View Dashboard:
